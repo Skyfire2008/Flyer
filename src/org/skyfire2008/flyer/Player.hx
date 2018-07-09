@@ -8,16 +8,24 @@ import flash.display.BitmapData;
  * ...
  * @author 
  */
-class Player {
+class Player extends GameObject{
 	
-	public var pos: Point;
-	public var bmp(default, null): BitmapData;
-	public var bmpCenter(default, null): Point;
+	private var _bmp: BitmapData;
+	private var _bmpCenter: Point;
 
-	public function new() {
+	public function new(game: Game) {
+		super(game);
 		this.pos = new Point();
-		this.bmp = new Assets.PlayerShip();
-		this.bmpCenter = new Point(19, 37);
+		this._bmp = new Assets.PlayerShip();
+		this._bmpCenter = new Point(19, 37);
+	}
+	
+	private override function get_bmp(): BitmapData{
+		return _bmp;
+	}
+	
+	private override function get_bmpCenter(): Point{
+		return _bmpCenter;
 	}
 	
 }

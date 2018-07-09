@@ -13,7 +13,7 @@ class Game {
 	public var player(default, null): Player;
 
 	public function new() {
-		player = new Player();
+		player = new Player(this);
 	}
 	
 	public function update(){
@@ -21,7 +21,7 @@ class Game {
 	}
 	
 	public function draw(canvas: BitmapData){
-		canvas.copyPixels(player.bmp, player.bmp.rect, player.pos.subtract(player.bmpCenter), player.bmp);
+		player.draw(canvas);
 	}
 	
 	public function setPlayerPosition(pos: Point){

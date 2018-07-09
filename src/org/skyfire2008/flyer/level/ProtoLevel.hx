@@ -1,4 +1,5 @@
 package org.skyfire2008.flyer.level;
+import org.skyfire2008.flyer.enemy.EnemyType;
 
 /**
  * ...

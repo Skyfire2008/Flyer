@@ -10,3 +10,31 @@ class PlayerShip extends BitmapData{
 		super(0, 0);
 	}
 }
+
+@:bitmap("assets/enemyShip0.png")
+class EnemyShip0 extends BitmapData{
+	public function new(){
+		super(0, 0);
+	}
+}
+
+@:bitmap("assets/enemyShip1.png")
+class EnemyShip1 extends BitmapData{
+	public function new(){
+		super(0, 0);
+	}
+}
+
+@:bitmap("assets/enemyShip2.png")
+class EnemyShip2 extends BitmapData{
+	public function new(){
+		super(0, 0);
+	}
+}
+
+@:bitmap("assets/enemyShip3.png")
+class EnemyShip3 extends BitmapData{
+	public function new(){
+		super(0, 0);
+	}
+}

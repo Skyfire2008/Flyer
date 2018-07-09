@@ -1,6 +1,7 @@
 package org.skyfire2008.flyer;
 
 import flash.display.BitmapData;
+import org.skyfire2008.flyer.enemy.Enemy;
 
 import flash.display.Stage;
 import flash.display.StageAlign;
@@ -37,6 +38,7 @@ class Main{
 		stage.addEventListener(MouseEvent.MOUSE_MOVE, onMouseMove);
 		
 		game = new Game();
+		var kek: Enemy = new Enemy(game);
 	}
 	
 	private static function onMouseMove(e: MouseEvent){

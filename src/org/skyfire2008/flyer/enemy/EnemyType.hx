@@ -1,4 +1,4 @@
-package org.skyfire2008.flyer;
+package org.skyfire2008.flyer.enemy;
 
 import flash.display.BitmapData;
 
